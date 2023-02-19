@@ -1,0 +1,137 @@
+/* ทำการ reset browser ต่างๆก่อน */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ถึง tag HTML */
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* set ค่าใน body ทั้งหมด */
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #ffffff;
+    background-image: url(../image/logo3.jpg);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02cm;
+    font-weight: 400;
+}
+
+/* เป็นการจัดตำแหน่ง class ใหญ่ให้อยู่ตรงกลาง */
+.blurred-box{
+    position: relative;
+    width: 250px;
+    height: 400px;  /*ความกว้าง-สูงของขอบเบลอ*/
+    top: calc(50% - 280px); /*300px คือความสูงต่ำของขอบเบลอ ยิ่งเลขมากยิ่งสูง*/
+    left: calc(50% - 125px);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.blurred-box:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -20px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    filter: blur(10px);
+}
+
+/* ให้ class user-signin-box ที่โดนทับมาอยู่ข้างหน้า */
+.user-signin-box{
+    position: relative; 
+    margin-top: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* กำหนดของทุกแท็ก */
+.user-signin-box > *{
+    display: inline-block;
+    width: 200px;
+} /* จาก method นี้ box ทุกอย่างจะกว้างเท่ากัน */
+
+/* เป็นส่วนที่ให้ใส่รูปภาพคน */
+.user-icon{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url(image/logo3.jpg);
+} 
+
+/* ส่วน Username ใต้รูป*/
+.user-name{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #438FFD;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+
+/* กำหนด margin ของ userEmail */
+input.user-useremail{
+    margin-bottom: 20px !important;
+/* ระยะห่างกับ password ห่าง 4 */
+}
+
+/* แต่ง box ของ useremail userpassword */
+input.user-useremail, input.user-userpassword{
+    display: block;
+    width: 200px;
+    height: 18px;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 15px 15px;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+    background-color:#ffffff;
+    border: 1px solid #438FFD;
+}
+
+.remember-me{
+    margin-top: 12px;
+    font-size: 8px;
+    color: #fff;
+    text-align: left;
+}
+
+button.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    border: none;
+    margin: 30px auto;
+    outline: none;
+    background-color:#438FFD;
+    
+    font-size: 10px;
+    color: #ffff;
+}
+
+/* เปลี่ยนสี Email Password */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffff;
+    opacity: 1; /* Firefox */
+  }

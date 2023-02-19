@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor</title>
+
+  <link rel="stylesheet" href="../Welcome/Welcome.css">
+  <link rel="stylesheet" href="../Monitor/Monitor.css">
+  <link rel="stylesheet" href="History.css">
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- container-navbar -->
+  <header class="container-navbar">
+
+    <!-- nav bar -->
+    <nav class="flex-navbar">
+        <ul class="icon">
+          <li class="pro-icon"><img src="../image/indoorwhite.jpg" width="195px" height="53px" ></li>
+            <!-- <li class="pro-name"> <h4>Indoor Tracking</h4></li> -->
+        </ul>
+
+        <ul class="menu">
+            <li class="item1"><a href="../Monitor/Monitor.html">Monitor</a></li>
+            <li class="item2"><a href="../History/History.html">History </a></li>
+            <li class="item4">Management
+                <ul>
+                    <li class="item"><a href="../Management/floor/Floor.html">Floor</a></li>
+                    <li class="item"><a href="../Management/tag/Tag.html">Tag</a></li>
+                    <li class="item"><a href="../Management/anchor/Anchor.html">Anchor</a>
+                    <li class="item"><a href="../Management/user/User.html">User</a>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+  
+  </header>
+
+  <!----------------- container-side -------------------->
+  <header class="container-side">
+
+    <!-- top bar -->
+    <header class="flex-topbar">
+
+        <div class="menu-name">History</div>
+
+        <div class="user-bar">
+            <ul class="user-info">
+
+                <li class="user-info-main-menu"><img src="../image/user-icon.png" width="20px" height="20px" > Username
+                    <ul>
+                      <!-- <li><a href="../User/User.html">View Profile</a></li> -->
+                      <li><a href="#" onclick="return logout()">Sign out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- content -->
+    <header class="flex-content">
+        <div class="content">
+
+          <!---------------------------- monitor1 ----------------->
+          <header class="history1">
+
+            <!-------------------------filter-monitor ------------------>
+            <div class="container-history-11">
+              <div class="box-filter">
+
+                <div class="flex-box-filter">
+
+                  <div class="box-building">
+                        <div class="select-building">Building</div>
+            
+                        <select class="select-building" name="" id="">
+                          <option value="1">-- Select building --</option>
+                          <option value="2">อาคาร 1</option>
+                        </select>
+                  </div>
+
+                  <div class="box-floor">
+                      <div class="select-floor">Floor</div>
+            
+                      <select class="select-floor" name="" id="">
+                        <option value="1">-- Select floor --</option>
+                        <option value="2">ชั้น 1</option>
+                        <option value="3">ชั้น 2</option>
+                      </select>
+                  </div>
+
+                  <div class="box-duration">
+                    <div class="select-duration">Duration</div>
+          
+                    <select class="select-duration" name="" id="">
+                      <option value="1">-- Select duration --</option>
+                      <option value="2">09.30-10.00</option>
+                      <option value="3">10.01-10.30</option>
+                    </select>
+                  </div>
+
+                  <div class="box-date">
+                    <div class="select-date">Date</div>
+          
+                    <select class="select-date" name="" id="">
+                      <option value="1">12/12/2565</option>
+                    </select>
+                  </div>
+
+                  <div class="box-stationary-rate">
+                    <div class="select-stationary-rate">Stationary Update Rate</div>
+          
+                    <select class="select-stationary-rate" name="" id="">
+                      <option value="1">-- Select --</option>
+                      <option value="2">ชั้น 1</option>
+                      <option value="3">ชั้น 2</option>
+                    </select>
+                  </div>
+
+              
+
+                  <!-- submit -->
+                  <div class="history-submit">
+                    <!-- return function -->
+                    <button class="item1" onclick="return show_hide()">Import</button>
+                    <button class="item2" onclick="return show_hide()"> View </button>
+
+                  </div>
+                </div>
+                
+              </div>     
+            </div>
+
+            <!------------------------- tag in building -------------------->
+
+
+            <div class="container-history-12" id="display1">
+              <div class="boxout-tag-building">
+                <div class="boxin-tag-building">
+                  <div class="flex-tag">
+      
+                    <div class="all-tag">
+                      <div class="item4"><h3>Tag ภายในอาคาร</h3></div>
+                      <div class="item5">อาคาร 1</div>
+                    </div>
+      
+                    <div class="item6">20</div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+
+          </header>
+
+          <!-------------------- monitor2 -------------------->
+          <header class="monitor2" >
+            <div class="container-monitor21" id="display2">
+              <div class="flex-table-device">
+
+                <div class="table-name1">Device</div>
+                   
+                <div class="table-name2">รายการ Tag</div>
+                  
+
+                <div class="table-device">
+
+                  <table class="table-list-device">
+                    <thead>
+                      <tr>
+                        <th> </th>
+                        <th>Tag Name</th>
+                        <th>Location</th>
+                        <th>Select</th>
+                      </tr>
+                    </thead>
+      
+                    <tbody>
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      <tr>
+                        <td><img src="../image/user-icon2.png" width="15px" height="15px"></td>
+                        <td>DWx001 <br> No.62050302</td>
+                        <td>
+                          x = 7 
+                          <br>
+                          y = 8
+                        </td>
+                        <td><input type="checkbox" ></td>
+                      </tr>
+      
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container-monitor22" id="display3">
+              <div class="flex-graph">
+                <div class="floor-plan">
+                  <div class="floor-name">อาคาร 1 <br> ชั้น 3</div>
+                  <div class="floor-graph">แปลนไว้ plot</div>
+                </div>
+              </div>
+            </div>
+            
+          </header>
+        </div>
+        
+  </header>
+
+  <!-- <script src="../Welcome/Welcome.js"></script> -->
+  <script src="History.js"></script>
+
+</body>
+</html>

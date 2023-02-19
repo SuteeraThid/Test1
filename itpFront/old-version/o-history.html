@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor</title>
+
+  <link rel="stylesheet" href="../Welcome/Welcome.css">
+  <link rel="stylesheet" href="../Monitor/Monitor.css">
+  <link rel="stylesheet" href="History.css">
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Side Menubar -->
+  <nav>
+    <ul class="icon">
+      <li class="pro-icon"> <img src="image/logo2.jpg" width="70px" height="70px" ></li>
+      <li class="pro-name"> <a href="../Welcome/Welcome.css"><h4>Indoor Tracking</h4></a></li>
+    </ul>
+
+    <ul class="menu">
+      <li class="item item1"><a href="Monitor.html">Monitor</a></li>
+      <li class="item item2"><a href="">History</a></li>
+      <li class="item item3"><a href="Management.html">Management</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Top Menubar -->
+  <div class="bar">
+    <header class="user-bar">
+      
+        <!-- <p class="name-present-menu">Welcome "Username"</p> -->
+
+        <ul class="user-info">
+          
+          <li class="user-info-main-menu"><img src="image/user-icon2.png" width="20px" height="20px" > Username
+            <ul>
+              <li><a href="User.html">View Profile</a></li>
+              <li><a href="#" onclick="return logout()">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      
+    </header>
+
+    <!-- content -->
+    <header class="history">
+
+      <!-- from-history -->
+      <div class="from-history">
+
+        <!-- <div class="invisible-container-history"> -->
+
+          <div class="building-flex">
+            <div class="building-box">
+              <div>Building</div>
+              <select name="" id="">
+                <option value="">อาคารภัทริน</option>
+              </select>
+            </div>
+          </div>
+    
+          <div class="floor-flex">
+            <div class="floor-box">
+              <div>Floor</div>
+              <select name="" id="">
+                <option value="">ชั้น 1</option>
+                <option value="">ชั้น 2</option>
+                <option value="">ชั้น 3</option>
+                <option value="">ชั้น 4</option>
+              </select>
+            </div>
+          </div>
+          
+    
+          <div class="duration-flex">
+            <div class="duration-box">
+              <div>Duration</div>
+              <select name="" id="">
+                <option value="">ชั้น 1</option>
+                <option value="">ชั้น 2</option>
+                <option value="">ชั้น 3</option>
+                <option value="">ชั้น 4</option>
+              </select>
+            </div>
+          </div>
+    
+    
+          <div class="Date-flex">
+            <div class="Date-box">
+              <div>Date</div>
+              <select name="" id="">
+                <option value="">ชั้น 1</option>
+                <option value="">ชั้น 2</option>
+                <option value="">ชั้น 3</option>
+                <option value="">ชั้น 4</option>
+              </select>
+            </div>
+          </div>
+    
+    
+          <div class="sur-flex">
+            <div class="sur-box">
+              <div>Stationaty Update Rate</div>
+              <select name="" id="">
+                <option value="">ชั้น 1</option>
+                <option value="">ชั้น 2</option>
+                <option value="">ชั้น 3</option>
+                <option value="">ชั้น 4</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="submit">
+            <!-- return function -->
+              <div>
+                  <button>Import</button>
+              </div>
+              
+              <div>
+                  <button onclick="return show_hide()">submit</button>
+              </div>
+          </div>
+
+        <!-- </div> -->
+      </div>
+
+      <!-- active-tag -->
+      <div class="session-active-floor">
+        <div class="active-tag">
+
+          <div class="all-tag">
+            <div class="all-tag item4"><h3>Tag</h3></div>
+            <div class="all-tag item5">10</div>
+          </div>
+
+          <div class="item6">ชั้น 3</div>
+      </div>
+      </div>
+   
+      
+    </header>
+
+    <!-- ------------------------------------------ -->
+    <!-- History-show  -->
+    <header class="flex-history-show">
+      <div class="history-floor-show" id="history-floor-show">
+
+        <!-- ฝั่ง  History floor-plan -->
+        <div class="history-floor-plan" >          
+          <div class="history-floor-name">
+          <h1>อาคารภัทริน <br> ชั้น 1</h1></div>
+          <div class="history-floor-graph">แปลนไว้ plot</div>
+        </div>
+
+        <!-- ฝั่ง device-list -->
+        <div class="history-device-list">
+
+          <!-- ---------------------------- -->
+
+          <!-- ตาราง Device -->
+          <div class="device-list-device">
+
+            <div class="list-device-topic"><h1>Device</h1></div>
+            
+            <table class="table-list-device">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>checkbox</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+                <tr>
+                  <td><img src="image/user-icon2.png" width="15px" height="15px"></td>
+                  <td>DWx001 <br> No.62050302</td>
+                  <td>
+                    x = 7 
+                    <br>
+                    y = 8
+                  </td>
+                  <td><input type="checkbox" ></td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Export button  -->
+          <div class="flex-export">
+            <div class="export">
+              <button>Export</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+  </div>
+
+  <script src="../Welcome/Welcome.js"></script>
+  <script src="History.js"></script>
+
+</body>
+</html>

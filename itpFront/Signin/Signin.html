@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+
+    <!-- <link rel="stylesheet" href="styleSignin.css"> -->
+    <link rel="stylesheet" href="Signin.css">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="flex-signin">
+
+            <div class="flex-logo">
+                <div><img src="../image/indoorblack.jpg" width="320px" height="80px" ></div>
+                <!-- <div id="logo-name">Indoor Tracking</div> -->
+            </div>
+            <div class="flex-form">
+                <input type="text" class="user-useremail" id="username" placeholder="Email">
+                <input type="password" class="user-userpassword" id="password" placeholder="Password">
+                
+                <button onclick="login()" type="submit" class="signin"> SIGN IN </button>
+               
+            </div>
+
+    </div>
+
+    <script src="Signin.js"></script>
+
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>

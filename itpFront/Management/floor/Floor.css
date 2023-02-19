@@ -1,0 +1,55 @@
+/* ----------------------------Menu------------------ */
+/* เมนู monitor */
+.menu .item1 a{
+    background:#438FFD;
+    color: #ffffff;
+}
+.menu .item1 a:hover{
+    background: #ffffff;
+    color: #438FFD;
+}
+
+/* ลบขาวเมนู Tag */
+.menu li.item6 a{
+    background:#438FFD;
+    color: #ffffff;
+}
+.menu li.item6 a:hover{
+    background: #ffffff;
+    color: #438FFD;
+}
+
+/* ขาวเมนู floor */
+.menu li.item5 a{
+    width: 187px; 
+    background: #ffffff;
+    color: #438FFD;
+}
+
+/* ----------------------------content----------------------- */
+
+
+.topic-name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    width: 500.63px;
+    color: #424656;
+
+    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+
+    border: 1px solid red;
+}
+
+.search-info{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: flex-end;   
+    justify-content: flex-end;
+
+    border: 1px solid olive;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+
+  <link rel="stylesheet" href="Welcome.css">
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- container-navbar -->
+    <header class="container-navbar">
+
+        <!-- nav bar -->
+        <nav class="flex-navbar">
+            <ul class="icon">
+                <li class="pro-icon"><img src="../../image/defence-logo-white.png" width="160px" height="40px" ></li>
+                <!-- <li class="pro-name"> <h4>Indoor Tracking</h4></li> -->
+            </ul>
+
+            <ul class="menu">
+                <li class="item1"><a href="../Monitor/Monitor.html">Monitor</a></li>
+                <li class="item2"><a href="../History/History.html">History </a></li>
+                <li class="item3"><a href="#">Notification</a></li>
+                <li class="item4">Management
+                    <ul>
+                        <li class="item"><a href="../Management/floor/Floor.html">Floor</a></li>
+                        <li class="item"><a href="../Management/tag/Tag.html">Tag</a></li>
+                        <li class="item"><a href="../Management/anchor/Anchor.html">Anchor</a>
+                        <li class="item"><a href="../Management/user/User.html">User</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- container-side -->
+    <header class="container-side">
+
+        <!-- top bar -->
+        <header class="flex-topbar">
+
+            <div class="menu-name">Welcome Suteera Tidbunkrong</div>
+
+            <div class="user-bar">
+                <ul class="user-info">
+
+                    <li class="user-info-main-menu"><img src="../image/user-icon.png" width="20px" height="20px" > Username
+                        <ul>
+                          <li><a href="../User/User.html">View Profile</a></li>
+                          <li><a href="#" onclick="return logout()">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- content -->
+        <header class="flex-content">
+            <div class="">Select manu</div>
+        </header>
+    </header>
+
+  <script src="Welcome.js"></script>
+
+</body>
+</html>

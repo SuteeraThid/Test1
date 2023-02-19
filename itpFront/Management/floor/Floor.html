@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floor Management</title>
+
+    <link rel="stylesheet" href="../../Welcome/Welcome.css">
+    <link rel="stylesheet" href="../tag/Tag.css">
+    <link rel="stylesheet" href="Floor.css">
+
+
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- container-navbar -->
+    <header class="container-navbar">
+
+        <!-- nav bar -->
+        <nav class="flex-navbar">
+            <ul class="icon">
+                <li class="pro-icon"><img src="../../image/indoorwhite.jpg" width="195px" height="53px" ></li>
+                <!-- <li class="pro-name"> <h4>Indoor Tracking</h4></li> -->
+            </ul>
+
+            <ul class="menu">
+                <li class="item1"><a href="../../Monitor/Monitor.html">Monitor</a></li>
+                <li class="item2"><a href="../../History/History.html">History </a></li>
+                <li class="item4">Management
+                    <ul>
+                        <li class="item5"><a href="">Floor</a></li>
+                        <li class="item6"><a href="../tag/Tag.html">Tag</a></li>
+                        <li class="item7"><a href="../anchor/Anchor.html">Anchor</a>
+                        <li class="item8"><a href="../user/User.html">User</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- container-side -->
+    <header class="container-side">
+
+        <!-- top bar -->
+        <header class="flex-topbar">
+
+            <div class="menu-name">Management</div>
+
+            <div class="user-bar">
+                <ul class="user-info">
+
+                    <li class="user-info-main-menu"><img src="../image/user-icon.png" width="20px" height="20px" > Username
+                        <ul>
+                          <!-- <li><a href="../User/User.html">View Profile</a></li> -->
+                          <li><a href="#" onclick="return logout()">Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- content -->
+        <header class="flex-content">
+            <div class="container-management">
+
+                <!-- <div class="box-management"> -->
+                    <div class="top-management">
+                        <div class="topic-name">Floor Management</div>
+                        <div class="search-info">
+                                <input type="text" placeholder="Creator">
+                                <button class="item1" onclick="searchfloor()"> <img src="../../image/icon-Search.png" alt=""> Search </button>
+                                <button class="item2" onclick="floorAdd()"><img src="../../image/icon-Add.png" alt=""> Add </button> 
+                            
+                        </div>
+                    </div>
+                    
+
+                    <div class="flex-table-tag">
+                        <table class="table-tag">
+                            <thead>
+                            <tr>
+                                <th> </th>
+                                <th>Building</th>
+                                <th>Floor</th>
+                                <th>Date Created</th>
+                                <th>Creator</th>
+                                <th>Operator</th>
+                            </tr>
+                            </thead>
+            
+                           <tbody id="table-body">
+
+                           <!-- <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td>อาคาร 1</td>
+                                <td>ชั้น 1</td>
+                                <td>12/12/2565 <br> 16.24 น.</td>
+                                <td>Suteera</td>
+                                <td>
+                                    <button><img src="../../image/icon-Vector.png" width="20px" height="20px"></button>
+                                    <button><img src="../../image/icon-Delete.png" width="20px" height="20px"></button>
+                                </td>
+                            </tr> -->
+             -->
+                            
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </header>
+    </header>
+    <script src="Floor.js"></script>
+
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>

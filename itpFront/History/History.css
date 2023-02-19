@@ -1,0 +1,128 @@
+/* ----------------------------Menu------------------ */
+.menu .item1 a{
+    background:#438FFD;
+    color: #ffffff;
+}
+
+.menu .item1 a:hover{
+    background: #ffffff;
+    color: #438FFD;
+}
+
+
+.menu .item2 a{
+    background: #ffffff;
+    color: #438FFD;
+}
+
+/* ---------------------แบบแสดง----------------*/
+
+.menu .item4 ul{
+    margin-top: 10px;
+    margin-left: -10px;
+    position: absolute;
+
+    display: none;
+}
+
+.menu .item4:hover ul{
+
+    display: block;
+}
+
+/* -------------------------Imformation--------------- */
+.history1{
+    display: flex;
+    
+    border: 1px solid red;
+}
+
+#display1{
+    display: none;
+}
+#display2{
+    display: none;
+}
+#display3{
+    display: none;
+}
+
+/* กรอบ */
+.box-filter{
+    width: 1051.69px;
+}
+
+/* imformation */
+.flex-box-filter{
+    display: flex;
+    height: 90%;
+
+    margin-left: 40px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    justify-content: flex-around ;
+
+    border: 1px solid blue;
+
+}
+
+.box-floor{
+    margin-top: 0;
+}
+
+.history1 .box-building, .box-floor, .box-duration, .box-date, .box-stationary-rate, .history-submit{
+    color: #424656;
+    font-weight: 400;
+    font-size: 14px;
+
+    /* width: 247px; */
+    width: 322px;
+    height: 60px;
+    flex-grow: 0;
+    
+    /* border: 1px solid orange; */
+}
+
+.flex-box-filter select{
+    width: 290px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 10px;
+
+    /* border: 1px solid pink; */
+}
+
+.history-submit{
+    display: flex;
+    align-items: center;
+    /* align-self: center; */
+
+    padding-left: 20px 20px 20px 20px;
+}
+
+.history-submit button.item2{
+    display: flex;
+    margin-left: 31px;
+}
+
+.history-submit button{
+    background: #FFFFFF;
+    /* ปุ่มหลัก */
+    color: #438FFD;
+    border: 1.5px solid #438FFD;
+    border-radius: 13px;
+    padding: 6px 45px ;
+}
+
+.history-submit button:hover{
+    background: #438FFD;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+
+/* -----------------------Tag ภายในอาคาร------------------- */
+.container-history-12{
+margin-left: 31.09px;
+}

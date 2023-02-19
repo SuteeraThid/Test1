@@ -1,0 +1,337 @@
+.item3{
+    color: #F74070 !important; 
+    background: #20223C;
+}
+
+.flex-floor{
+    display: flex;
+    position: static;
+    width: 1200px; 
+    height: 350px;
+    margin-top: 50px;
+
+    /* border: 1px solid orangered;  */
+}
+
+.flex-search-floor{
+    width: 75%;
+    /* border: 1px solid violet;  */
+}
+
+.flex-all-floor{
+    width: 200px;
+    margin-left: 10px;
+    /* border: 1px solid green;  */
+}
+
+.flex-filter{
+    display: flex;
+    justify-content: flex-end;
+    width: 880px;
+    /* align-self: center; */
+    /* border: 1px solid red; */
+}
+
+/* filter */
+.flex-filter .date-created-flex, .creator-flex{
+    width: 180px; 
+    flex-direction: column;
+    justify-content: flex-end;
+
+    font-weight: 400;
+    font-size: 15px;
+    color: #2F334F;
+
+    
+}
+
+.flex-filter select{
+    width: 90%;
+    padding: 5px;
+    margin-top: 1px;
+    background: #FFFFFF;
+    border: 1px solid rgba(32, 57, 144, 0.15);
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    border-radius: 10px;
+    font-size: 15px;
+    color: #858587;
+}
+
+.flex-table-floor{
+    width: 880px;
+    height: 75%;
+    /* border: 1px solid blue; */
+}
+
+.content-table{
+    max-height: 100%;
+}
+
+/* submit */
+.monitor-submit{
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px; */
+    height: 18px;
+    border-radius: 13px;
+    padding: 13px 13px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    border: 2px solid #00EC96;
+}
+
+.monitor-submit form button{
+   background: none;
+   border: none;
+   color: #00EC96;
+}
+
+.monitor-submit:hover{
+    box-shadow: 0px 4px 39px 9px rgba(0, 0, 0, 0.09);
+    border-radius: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    border-radius: 13px;
+    padding: 13px 13px;
+    border: none;
+    outline: none;
+    background: linear-gradient(94.95deg, #00EC96 4.27%, #00A2F8 94.62%);
+    border: 2px solid #FFFFFF;
+}
+
+.monitor-submit form button:hover{
+    color: #FFFFFF;
+}
+
+
+/* table */
+.content-table{
+    border-collapse: collapse;
+    margin: 17px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+.content-table tbody{
+    max-height: 10px;
+    overflow: auto;
+} */
+
+.content-table thead tr{
+    background-color: #F0F2F8;
+    color: rgba(32, 57, 144, 0.8);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td{
+    padding: 13px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background: #FFFFFF;
+}
+
+/* 
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+} */
+/* 
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  } */
+
+.flex-all-floor{
+    display: flex;
+    flex-direction: column;
+}
+
+.active-tag{
+    padding-top: 15%;
+    width: 100%;
+    height: 70%;
+    margin-top: 44%;
+    background: #FFFFFF;
+    border: 1px solid rgba(32, 57, 144, 0.15);
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    border-radius: 10px;
+    font-size: 15px;
+    color: #858587;
+}
+
+.all-tag{
+    width: auto;
+    margin-top: 3%;
+    margin-left: 15px;
+    /* border: 1px solid orangered; */
+}
+
+.all-tag .item4{
+    font-size: 22px;
+    color: #708099;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* จำนวน Tag */
+.all-tag .item5{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #383838;
+    height: 50%;
+    align-self: center;  
+    margin-left: 10px;
+     
+}
+
+.item6 form button{
+    margin-top: 60px;
+    margin-left: 35px;
+
+    width: 139px;
+    height: 32.5px;
+    left: 1235px;
+    top: 452px;
+
+    background: linear-gradient(95.89deg, #00EC96 4.98%, #00A2F8 95.43%);
+    border: none;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*------------------------------------------------------------*/
+
+/*device */
+
+.flex-device{
+    display: flex;
+    position: static;
+    width: 1200px; 
+    height: 350px;
+    margin-top: 40px;
+
+    /* border: 1px solid orangered;  */
+}
+
+.flex-search{
+    display: flex;
+    width: 880px;
+    /* border: 1px solid lime; */
+}
+
+.select-anchor-tag{
+    display: flex;
+    width: 200px;
+
+    /* border: 1px solid blueviolet; */
+}
+
+.select-anchor-tag button{ 
+    /* margin-top: 10px; */
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(94.95deg, #00EC96 4.27%, #00A2F8 94.62%);
+    border: 2px solid #FFFFFF;
+    border-radius: 11px;
+    
+    margin: 18px 5px 0px 5px;
+    padding: 5px 18px;
+}
+
+.select-anchor-tag button:hover{
+    color: #ffffff;
+    background: linear-gradient(94.95deg, #00EC96 4.27%, #00A2F8 94.62%);
+    border: 2px solid #FFFFFF;
+    
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+}
+
+/* table-anchor */
+.flex-table-anchor{
+    display: none;
+    width: 880px;
+    height: 75%;
+    /* border: 1px solid blue; */
+        
+}
+
+.content-table-anchor{
+
+    border-collapse: collapse;
+    margin: 17px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+    /* border: 1px solid red; */
+}
+
+.content-table-anchor thead tr{
+    background-color: #F0F2F8;
+    color: rgba(32, 57, 144, 0.8);
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table-anchor th, .content-table-anchor td{
+    padding: 13px 15px;
+}
+
+.content-table-anchor tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background: #FFFFFF;
+}
+
+/* table-tag */
+.flex-table-tag{
+    display: none;
+    width: 880px;
+    height: 75%;
+    /* border: 1px solid pink; */
+}
+
+.content-table-tag{
+border-collapse: collapse;
+margin: 17px 0;
+font-size: 0.9em;
+width: 100%;
+border-radius: 5px 5px 0 0;
+
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table-tag thead tr{
+background-color: #F0F2F8;
+color: rgba(32, 57, 144, 0.8);
+text-align: left;
+font-weight: bold;
+}
+
+.content-table-tag th, .content-table-tag td{
+padding: 13px 15px;
+}
+
+.content-table-tag tbody tr {
+border-bottom: 1px solid #dddddd;
+background: #FFFFFF;
+}

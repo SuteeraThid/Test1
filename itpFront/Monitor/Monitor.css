@@ -1,0 +1,346 @@
+
+.menu .item1 a{
+    background: #ffffff;
+    color: #438FFD;
+}
+
+.menu-name{
+    font-weight: 600;
+    font-size: 25px;
+
+    color: #424656;
+}
+
+ul button{
+    background: #438FFD;
+    border: 1px solid #438FFD;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    margin-top: 55.5px;
+
+    width: 337.5px;
+    height: 53.71px;
+}
+
+/*
+.flex-form .user-userpassword{
+    margin-top: 38px;
+}
+
+::placeholder { 
+    color:#438FFD;
+    opacity: 1; 
+  }
+
+.flex-form button{
+    background: #438FFD;
+    border: 1px solid #438FFD;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    margin-top: 55.5px;
+
+    width: 337.5px;
+    height: 53.71px;
+}*/
+
+/* ---------------------แบบแสดง----------------*/
+
+.menu .item4 ul{
+    margin-top: 10px;
+    margin-left: -10px;
+    position: absolute;
+
+    display: none;
+}
+
+.menu .item4:hover ul{
+
+    display: block;
+}
+
+/* ------------------------------------------monitor1 */
+.monitor1{
+    display: flex;
+
+    /* border: 1px solid red; */
+}
+
+#display1{
+    display: none;
+}
+
+.container-monitor-11, .container-monitor-12, .container-monitor-13{
+    width: 541.39px;
+    /* border: 1px solid violet; */
+}
+
+.boxout-tag-building, .boxout-tag-floor{
+    background: #438FFD;
+    width: 510.3px;
+    height: 213px;
+    border-radius: 6px;
+
+    /* margin-right: 42px; */
+}
+
+.boxin-tag-building, .boxin-tag-floor{
+    background: #FFFFFF;
+
+    /* margin-right: 42px; */
+
+    width: 510.3px;
+    height: 213px;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 6px;
+
+    /* ขอบสีฟ้า */
+    margin-left: 10px;
+}
+
+.flex-tag{
+    display: flex;
+    height: 100%;
+
+    /* border: 1px solid green; */
+}
+
+.all-tag{
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-self: center; */
+
+    /* border: 1px solid pink; */
+}
+
+.flex-tag .item4{
+    color: #424656;
+    font-weight: 600;
+    font-size: 23px;
+
+margin-top: 42px;
+margin-left: 53px;
+}
+
+.flex-tag .item5{
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-left: 53px;
+    color: #424656;
+
+    /* border: 1px solid black; */
+}
+
+.flex-tag .item6{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    /* align-items: flex-end; */
+    
+    font-size: 60px;
+    font-weight: bold;
+    color: #424656;
+
+    /* border: 1px solid orange; */
+}
+
+.box-filter{
+    width: 510.3px;
+    height: 213px;
+    border-radius: 6px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 6px;
+}
+.flex-box-filter{
+    margin: 15px 25px 15px 25px;
+
+    /* border: 1px solid blue; */
+}
+
+.box-floor{
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.box-building, .box-floor, .submit11{
+    color: #424656;
+    font-weight: 400;
+    font-size: 14px;
+
+    /* border: 1px solid orange; */
+}
+
+.box-building select, .box-floor select{
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 10px;
+    width: 452.67px;
+    height: 35.9px;
+}
+
+.box-building select option, .box-floor select option{
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 10px;
+    width: 452.67px;
+    height: 35.9px;
+}
+
+.submit11{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* align-self: center; */
+
+    padding-left: 20px 20px 20px 20px;
+}
+
+.submit11 button{
+    background: #FFFFFF;
+/* ปุ่มหลัก */
+color: #438FFD;
+border: 1.5px solid #438FFD;
+border-radius: 13px;
+    padding: 6px 33px ;
+}
+
+.submit11 button:hover{
+    background: #438FFD;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+
+
+
+/* ------------------------------------------monitor2 */
+.monitor2{
+    display: flex;
+margin-top: 23px;
+    /* border: 1px solid blue; */
+}
+
+#display2{
+    display: none;
+}
+
+.container-monitor21{
+    border: 1px solid green;
+}
+
+.container-monitor21{
+    width: 510.3px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 6px;  
+}
+
+.flex-table-device{
+    margin-top: 19px;
+    margin-left: 32px;
+    margin-right: 53px;
+
+    /* border: 1px solid green; */
+}
+    /* margin: 19px, 53px, 35px, 32px; */
+
+
+.table-name1{
+    font-weight: 600;
+    font-size: 20px;
+    color: #424656;
+}
+
+.table-name2{
+    font-weight: 400;
+    font-size: 10px;
+    color: #424656;
+}
+
+
+.table-list-device{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+}
+
+.table-list-device thead tr {
+    background: rgba(129, 144, 187, 0.2);
+    border-radius: 4px;
+    color: #424656;
+    text-align: left;
+    font-weight: bold;
+  }
+
+.table-list-device th,
+.table-list-device td {
+  padding: 12px 15px;
+}
+
+.table-list-device tbody tr {
+    color: #424656;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+.container-monitor22{
+    width: 1082.78px;
+    margin-left: 31.09px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(121, 136, 151, 0.2);
+    border-radius: 6px;  
+}
+
+.flex-graph{
+    margin-top: 19px;
+    margin-left: 31.09px;
+    /* border: 1px solid green; */
+}
+
+.floor-name{
+    font-weight: 600;
+    font-size: 20px;
+
+color: #424656;
+}
+
+.floor-graph{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+
+    /* border: 1px solid orange; */
+}
+
+#click-me{
+    /* margin-top: 20px;
+  margin-left: 100px; */
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

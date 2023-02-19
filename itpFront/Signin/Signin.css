@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: url(../image/signin4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #ffffff;
+    
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02cm;
+    font-weight: 400;
+    /* background-attachment: fixed; */
+}
+
+.flex-signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    border: 1px solid red;
+}
+
+
+.flex-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* position: absolute; */
+    width: 330px;
+    height: 150px;
+
+    margin-top: 200px;
+
+
+    border: 1px solid blue;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    width: 337.5px;
+    /* height: 162.92px; */
+    height: auto;
+    margin-top: 380px;
+
+    
+   
+    border: 1px solid violet;
+}
+
+.flex-logo div{
+    align-self: center;
+
+
+    /* border: 1px solid pink; */
+}
+
+#logo-name{
+
+    /* แก้เรื่องฟ้อนไม่ตรง */
+
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #438FFD;
+    margin-top: 19.43px;
+}
+
+.flex-form input.user-useremail, input.user-userpassword{
+    background: #ffffff;
+    border: 1px solid #438FFD;
+    border-radius: 10px;
+    outline: none;
+
+    color: #438FFD;
+    padding-left: 10px;
+    /* width: 337.5px; */
+    width: 335px;
+    height: 53.71px;
+
+    /* margin-top: 38px; */
+}
+
+
+
+.flex-form .user-userpassword{
+    margin-top: 38px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#438FFD;
+    opacity: 1; 
+  }
+
+.flex-form button{
+    background: #438FFD;
+    border: 1px solid #438FFD;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    margin-top: 55.5px;
+
+    width: 337.5px;
+    height: 53.71px;
+}
+
+

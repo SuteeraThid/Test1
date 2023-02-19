@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #F0F2F8 ;
+    /* border: 1px solid red; เอาไว้ดูกรอบว่ามันเลยไหมหรืออยู่ช่วงไหน */
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/*Side Menubar*/
+
+nav{
+    display: block;
+    background: #2F334F;
+
+    /* มุมเหลี่ยม ซ้ายบน ขวาบน ขวาล่าง ซ้ายล่าง เวียนตามนาฬิกา */
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 30px 0px 50px 0px #BBBBBB;
+    width: 307px;
+    /* height: 100vh; */
+    padding-left: 20px 20px;
+    margin-right: 25px;
+
+    /* border: 1px solid red; */
+}
+
+.item{
+    /* เอาหมุดออก */
+    list-style-type: none;
+    
+}
+
+.icon{
+    margin-top: 50px;
+    padding-left: 0;
+    color: #F74070;
+    font-size: 23px;
+}
+
+.icon a{
+    /* เอาเส้นใต้ออก */
+    text-decoration: none;
+
+    /* เอาหมุดออก */
+    list-style-type: none; 
+
+    /* กำหนดสี */
+    color:#F74070;
+}
+
+.icon li{
+    /* จัดให้อยู่ตรงกลาง */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.menu{
+    margin-top: 30px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.menu li{
+    font-size: 18px;
+
+    /* ให้มีการขึ้นบรทัดใหม่ปกติ */
+    white-space: normal;
+
+    width: 307px;
+
+    /* border: 1px solid blue; */
+}
+
+.menu a{
+    /* 
+    a ไม่สามารถขยาย width ได้เพราะเหมือนมันไม่รับค่า 
+    เราเลยจะต้องทำให้มันเป็เสมือน div ก่อน เช่นการ display: block; */
+    display: block;
+
+    /* เอาเส้นใต้ออก */
+    text-decoration: none;
+
+    list-style-type: none;
+    color: #FFFF;
+    padding: 15px 15px ;
+    background-color: none;
+  
+}
+
+/* เมื่อ a ถูกเอาเม้าไปชี้ */
+.menu a:hover{
+    /* ค่อยมาจัดขอบตอนจะจิ้มอีกครั้ง */
+    background: #20223C;
+    color: #F74070;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*Top Menubar */
+
+.bar{
+    width: 1200px;
+    /* border: 1px solid red; */
+    
+}
+
+.user-bar{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* 
+ไม่เอาแล้วตัว welcome Username อ่ะ
+.name-present-menu{
+    font-size: 14px;
+    border: 1px solid blue;
+} */
+
+/* ไว้ขยับกรอบที่ Username */
+.user-info .user-info-main-menu{
+
+    /* กำหนดความกว้างของ flex ก่อน ถึงจะสามารถขยับตำแหน่งของกรอบ Username ได้ */
+    margin-right: 25px;
+    margin-top: 25px;
+    
+    padding: 9px;
+    transition: .3s;
+    
+    text-decoration: none;
+    color: #858587;
+    display: block;
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    border-radius: 7px;
+}
+
+.user-info .user-info-main-menu:hover{
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    color: #00EC96 ;
+    border: 1px solid #00EC96 ;
+}
+
+/* ขยับตำแหน่งของกรอบ Username ว่าจะให้อยู่ตำแหน่งไหนของ flex*/
+.user-info{
+    align-self: flex-end;
+}
+/* ไว้กำหนดสไตล์ให้ Username ทั้ง main & sub menu  */
+.user-info li{
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow:  30px 30px 100px 0px #BBBBBB;
+    border: 1px solid rgba(32, 57, 144, 0.15);
+    border-radius: 7px;
+    
+    font-size: 16px;
+    text-align: left;
+
+    width: 200px;
+    position: relative;
+
+}
+
+.user-info a{
+    text-decoration: none;
+    color: #858587;
+    display: block;
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    border-radius: 7px;
+
+    padding: 9px;
+    transition: .3s;
+
+}
+
+.user-info a:hover{
+
+    box-shadow: 0px 4px 39px 9px rgba(32, 57, 144, 0.09);
+    background: linear-gradient(93.72deg, #00EC96 0%, #00A2F8 88.89%);
+    color: #ffffff;
+}
+
+/* liแรกคือ Username liตัวสองคือ sub menu */
+.user-info li li{
+    font-size: 14px;
+}
+
+/* การทำ dropdrown */
+/* 1. เข้าไปที่ตัวที่จะเป็น sub menu และให้มันเป็น display: none;*/
+.user-info li ul{
+    margin-top: 10px;
+    margin-left: -10px;
+    position: absolute;
+
+    display: none;
+    width: inherit;
+}
+
+/* 2. เมื่อ main menu ถูกเอาเม้าส์ไปชี้ ul จะแสดงตัวออกมาเป็น block */
+.user-info li:hover ul{
+    display: block;
+}
+
+.user-info li ul li{
+    display: block;
+}
